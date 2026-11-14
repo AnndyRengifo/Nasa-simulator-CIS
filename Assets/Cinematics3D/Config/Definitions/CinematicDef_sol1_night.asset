@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8564e38c20835749a5e8368afe006c1, type: 3}
+  m_Name: CinematicDef_sol1_night
+  m_EditorClassIdentifier: SOL3.Cinematics::Sol3.Cinematics.CinematicDefinition
+  id: sol1_night
+  displayName: Primera noche marciana
+  notes: "Disparo: comienzo de la primera noche. Baja la luz, paneles solares, bater\xEDas, aviso de AURA."
+  scene:
+    guid: fb8f642068d9759498f94986172edeb3
+    path: Assets/Cinematics3D/Scenes/CIN_sol1_night.unity
+  timelineOverride: {fileID: 0}
+  expectedDuration: 33
+  subtitleSheets:
+  - {fileID: 11400000, guid: 0cbc984cff5570e49abee70feac3e02c, type: 2}
+  skippable: 1
+  skipAvailableAfter: 1
+  fadeInDuration: 0.75
+  fadeOutDuration: 0.75
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  endBehaviour: 0
+  returnScene:
+    guid: 
+    path: 
+  playOncePerSave: 1
+  castOverrides: []

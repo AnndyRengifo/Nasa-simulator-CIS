@@ -1,0 +1,19 @@
+{
+    "name": "SOL3.Game.Editor",
+    "rootNamespace": "Sol3.Game.Editor",
+    "references": [
+        "SOL3.Game",
+        "SOL3.Cinematics",
+        "Unity.RenderPipelines.Core.Runtime",
+        "Unity.RenderPipelines.Universal.Runtime"
+    ],
+    "includePlatforms": ["Editor"],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

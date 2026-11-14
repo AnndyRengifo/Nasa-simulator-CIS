@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce76f00de6977b4db0ff63cf79abdc5, type: 3}
+  m_Name: CinematicCatalog
+  m_EditorClassIdentifier: SOL3.Cinematics::Sol3.Cinematics.CinematicCatalog
+  globals:
+    cinematicRendererIndex: 1
+    targetAspect: 2
+    defaultLanguage: es
+    fallbackLanguage: es
+    watchdogMargin: 10
+    sceneLoadTimeout: 20
+    pauseWithTimeScale: 1
+    unloadUnusedAssetsAfterPlayback: 1
+  definitions:
+  - {fileID: 11400000, guid: 5de4d2098fb1290409b13befab6a0090, type: 2}
+  - {fileID: 11400000, guid: 6226a977629213a4ab0d8b32619bca65, type: 2}
+  - {fileID: 11400000, guid: 3989b18f6bfaf1f48923a5e432bcbc51, type: 2}
+  - {fileID: 11400000, guid: 003e75e48b371d54b929a2630c7c09f9, type: 2}
+  - {fileID: 11400000, guid: 1cef20fa85d54eb498a5b87f24a35820, type: 2}
+  - {fileID: 11400000, guid: 19cf55a959ee10540bad014bcbc72cda, type: 2}
+  - {fileID: 11400000, guid: ecf812ef05f59a049bb80d3efa14de74, type: 2}

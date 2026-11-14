@@ -1,0 +1,26 @@
+{
+    "name": "SOL3.Cinematics",
+    "rootNamespace": "Sol3.Cinematics",
+    "references": [
+        "Unity.Timeline",
+        "Unity.Cinemachine",
+        "Unity.TextMeshPro",
+        "UnityEngine.UI",
+        "Unity.InputSystem"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.cinemachine",
+            "expression": "3.0.0",
+            "define": "SOL3_CINEMACHINE"
+        }
+    ],
+    "noEngineReferences": false
+}

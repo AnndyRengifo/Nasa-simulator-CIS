@@ -1,0 +1,33 @@
+{
+    "name": "SOL3.Cinematics.Tests.Editor",
+    "rootNamespace": "Sol3.Cinematics.Tests",
+    "references": [
+        "SOL3.Cinematics",
+        "SOL3.Cinematics.Editor",
+        "Unity.Timeline",
+        "Unity.Cinemachine",
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.unity.cinemachine",
+            "expression": "3.0.0",
+            "define": "SOL3_CINEMACHINE"
+        }
+    ],
+    "noEngineReferences": false
+}

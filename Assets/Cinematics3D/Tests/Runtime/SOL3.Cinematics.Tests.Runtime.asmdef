@@ -1,0 +1,22 @@
+{
+    "name": "SOL3.Cinematics.Tests.Runtime",
+    "rootNamespace": "Sol3.Cinematics.Tests",
+    "references": [
+        "SOL3.Cinematics",
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

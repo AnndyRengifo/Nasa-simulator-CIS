@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51bac46a0a5a8b34380bcdb201271174, type: 3}
+  m_Name: SUB_sol1_night_es
+  m_EditorClassIdentifier: SOL3.Cinematics::Sol3.Cinematics.SubtitleSheet
+  cinematicId: sol1_night
+  language: es
+  lines:
+  - lineId: sol1_night_010
+    speaker: {fileID: 11400000, guid: 557542bb9b0eed34bbe6efcc9af63401, type: 2}
+    text: "Atenci\xF3n. La producci\xF3n solar est\xE1 disminuyendo."
+    startTime: 1.5
+    endTime: 5.5
+    voiceClip: {fileID: 0}
+    voiceVolume: 1
+  - lineId: sol1_night_020
+    speaker: {fileID: 11400000, guid: 557542bb9b0eed34bbe6efcc9af63401, type: 2}
+    text: "Durante la noche dependeremos de la energ\xEDa almacenada."
+    startTime: 15
+    endTime: 20
+    voiceClip: {fileID: 0}
+    voiceVolume: 1
+  - lineId: sol1_night_030
+    speaker: {fileID: 11400000, guid: 557542bb9b0eed34bbe6efcc9af63401, type: 2}
+    text: Espero que hayas administrado bien nuestras reservas.
+    startTime: 22.5
+    endTime: 27.5
+    voiceClip: {fileID: 0}
+    voiceVolume: 1

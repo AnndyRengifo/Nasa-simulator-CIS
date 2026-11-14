@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51bac46a0a5a8b34380bcdb201271174, type: 3}
+  m_Name: SUB_ending_failure_es
+  m_EditorClassIdentifier: SOL3.Cinematics::Sol3.Cinematics.SubtitleSheet
+  cinematicId: ending_failure
+  language: es
+  lines:
+  - lineId: ending_failure_010
+    speaker: {fileID: 11400000, guid: 557542bb9b0eed34bbe6efcc9af63401, type: 2}
+    text: "Alerta. Los sistemas esenciales han alcanzado un estado cr\xEDtico."
+    startTime: 1
+    endTime: 6
+    voiceClip: {fileID: 0}
+    voiceVolume: 1
+  - lineId: ending_failure_020
+    speaker: {fileID: 11400000, guid: 557542bb9b0eed34bbe6efcc9af63401, type: 2}
+    text: No podemos mantener las operaciones actuales.
+    startTime: 8
+    endTime: 12
+    voiceClip: {fileID: 0}
+    voiceVolume: 1
+  - lineId: ending_failure_030
+    speaker: {fileID: 11400000, guid: 557542bb9b0eed34bbe6efcc9af63401, type: 2}
+    text: "La misi\xF3n cient\xEDfica ha sido interrumpida."
+    startTime: 15
+    endTime: 19
+    voiceClip: {fileID: 0}
+    voiceVolume: 1
+  - lineId: ending_failure_040
+    speaker: {fileID: 11400000, guid: 557542bb9b0eed34bbe6efcc9af63401, type: 2}
+    text: "Debemos priorizar la seguridad de la tripulaci\xF3n."
+    startTime: 22
+    endTime: 26.5
+    voiceClip: {fileID: 0}
+    voiceVolume: 1
+  - lineId: ending_failure_050
+    speaker: {fileID: 11400000, guid: 557542bb9b0eed34bbe6efcc9af63401, type: 2}
+    text: "En el espacio, incluso una decisi\xF3n peque\xF1a puede cambiar el resultado de toda una misi\xF3n."
+    startTime: 30.5
+    endTime: 37.5
+    voiceClip: {fileID: 0}
+    voiceVolume: 1

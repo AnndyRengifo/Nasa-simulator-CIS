@@ -1,0 +1,104 @@
+{
+  "disclaimer": "REAL = información de fuentes públicas verificables (con enlace). SIMULACIÓN = valores del modelo del juego, simplificados para que sea jugable. Este es un proyecto educativo independiente: no está avalado ni certificado por la NASA ni por otras agencias.",
+  "cards": [
+    {
+      "id": "donki",
+      "category": "REAL",
+      "title": "DONKI: base de datos de clima espacial (NASA)",
+      "summary": "DONKI (Space Weather Database Of Notifications, Knowledge, Information) recopila eventos de clima espacial: fulguraciones solares (FLR), eyecciones de masa coronal (CME) y tormentas geomagnéticas (GST), entre otros.",
+      "usedInGame": "El script scripts/fetch-nasa-data.mjs descarga registros HISTÓRICOS y el juego los muestra como contexto en el archivo, en el monitor de radiación y en los avisos solares. No son datos en tiempo real y no se usan para calcular dosis.",
+      "source": "NASA Community Coordinated Modeling Center (CCMC) / api.nasa.gov",
+      "url": "https://kauai.ccmc.gsfc.nasa.gov/DONKI/"
+    },
+    {
+      "id": "radlab",
+      "category": "REAL",
+      "title": "RadLab: datos de radiación espacial (NASA OSDR)",
+      "summary": "RadLab es una plataforma pública de datos de radiación espacial dentro del Open Science Data Repository de la NASA. Reúne medidas de detectores de la Estación Espacial Internacional y de naves más allá de la órbita baja, con herramientas de visualización y una API.",
+      "usedInGame": "Solo como referencia educativa. El juego NO integra todavía sus datos: la radiación de Base Aurora es un índice simulado. Las medidas de la Estación Espacial no son medidas de Marte.",
+      "source": "NASA Open Science Data Repository (OSDR) – RadLab",
+      "url": "https://visualization.osdr.nasa.gov/radlab/gui/data-overview/"
+    },
+    {
+      "id": "osdr",
+      "category": "REAL",
+      "title": "Open Science Data Repository (NASA OSDR)",
+      "summary": "Repositorio abierto de la NASA con datos de experimentos de biología y ciencias físicas realizados en el espacio (plantas, microbios, animales, células…).",
+      "usedInGame": "Inspira los temas de las investigaciones del laboratorio (cultivos, microbios, radiación). Los resultados de los experimentos del juego son ficticios.",
+      "source": "NASA Open Science Data Repository",
+      "url": "https://osdr.nasa.gov/bio/"
+    },
+    {
+      "id": "trek",
+      "category": "REAL",
+      "title": "Mars Trek y el cráter Jezero",
+      "summary": "Mars Trek es un portal de la NASA para explorar mapas y datos de la superficie de Marte. El cráter Jezero, antiguo lago, es el lugar donde aterrizó el rover Perseverance en 2021.",
+      "usedInGame": "Base Aurora se imagina en una llanura marciana de ese estilo. La ubicación exacta de la base es ficticia.",
+      "source": "NASA Mars Trek",
+      "url": "https://trek.nasa.gov/mars/"
+    },
+    {
+      "id": "csa_food",
+      "category": "REAL",
+      "title": "Comida en el espacio (Agencia Espacial Canadiense)",
+      "summary": "En la Estación Espacial no hay nevera ni cocina: la comida debe estar lista o casi lista para comer y conservarse durante toda la misión. Las agencias socias añaden alimentos de su país al menú.",
+      "usedInGame": "Explica por qué la colonia necesita cultivar alimentos frescos en el invernadero. Los rendimientos de los cultivos del juego son simulados.",
+      "source": "Agencia Espacial Canadiense (CSA/ASC)",
+      "url": "https://www.asc-csa.gc.ca/eng/astronauts/living-in-space/eating-in-space.asp"
+    },
+    {
+      "id": "delay",
+      "category": "REAL",
+      "title": "Retraso de las comunicaciones Tierra–Marte",
+      "summary": "Las señales de radio viajan a la velocidad de la luz. Según la distancia entre la Tierra y Marte (de unos 55 a unos 400 millones de km), un mensaje tarda entre unos 3 y 22 minutos solo de ida.",
+      "usedInGame": "Los mensajes de Control Tierra indican cuándo se enviaron. El retraso concreto de cada partida y la duración de la transmisión del informe están comprimidos para el juego (SIMULACIÓN).",
+      "source": "Cálculo físico con la velocidad de la luz (≈300 000 km/s)",
+      "url": ""
+    },
+    {
+      "id": "sol",
+      "category": "REAL",
+      "title": "El sol marciano",
+      "summary": "Un día solar en Marte (un «sol») dura unas 24 horas y 39 minutos. De noche los paneles solares no producen energía, por lo que las bases y los rovers dependen de baterías.",
+      "usedInGame": "Cada sol del juego dura unos minutos reales, con día y noche. La hora mostrada en pantalla es una hora simulada.",
+      "source": "NASA Science – Mars",
+      "url": "https://science.nasa.gov/mars/"
+    },
+    {
+      "id": "moxie",
+      "category": "REAL",
+      "title": "Oxígeno a partir de la atmósfera marciana (MOXIE)",
+      "summary": "La atmósfera de Marte es muy fina y está formada sobre todo por dióxido de carbono. El experimento MOXIE del rover Perseverance demostró que se puede producir oxígeno a partir de ese CO₂.",
+      "usedInGame": "El generador de oxígeno de la base está inspirado en esta idea; su producción en el juego es simulada.",
+      "source": "NASA – misión Mars 2020 Perseverance",
+      "url": "https://science.nasa.gov/mission/mars-2020-perseverance/"
+    },
+    {
+      "id": "sim_resources",
+      "category": "SIMULACIÓN",
+      "title": "Modelo de recursos de Base Aurora",
+      "summary": "Energía, oxígeno, agua, comida y salud se expresan en porcentajes y cambian con tasas simplificadas definidas en sim_config.json. No representan cantidades reales de una misión.",
+      "usedInGame": "Toda la economía del juego, el desgaste de los equipos y la probabilidad de averías (efecto dominó).",
+      "source": "Diseño del juego",
+      "url": ""
+    },
+    {
+      "id": "sim_radiation",
+      "category": "SIMULACIÓN",
+      "title": "Índice de radiación del juego",
+      "summary": "La radiación es un índice de 0 a 100 inventado para el juego. No es una dosis real (no está en milisieverts) y no se calcula a partir de la clase de ninguna fulguración solar.",
+      "usedInGame": "Sube durante la actividad solar si la tripulación no está en el refugio y daña la salud por encima de un umbral.",
+      "source": "Diseño del juego",
+      "url": ""
+    },
+    {
+      "id": "sim_events",
+      "category": "SIMULACIÓN",
+      "title": "Emergencias y actividad solar del juego",
+      "summary": "Las averías, decisiones y episodios de actividad solar son ficticios. Están inspirados en riesgos reales de las misiones espaciales, pero su momento, duración y efectos los decide el motor de eventos del juego (events.json).",
+      "usedInGame": "Eventos de cada sol, avisos previos y consecuencias.",
+      "source": "Diseño del juego",
+      "url": ""
+    }
+  ]
+}

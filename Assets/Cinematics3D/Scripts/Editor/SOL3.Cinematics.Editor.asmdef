@@ -1,0 +1,37 @@
+{
+    "name": "SOL3.Cinematics.Editor",
+    "rootNamespace": "Sol3.Cinematics.EditorTools",
+    "references": [
+        "SOL3.Cinematics",
+        "Unity.Timeline",
+        "Unity.Cinemachine",
+        "Unity.Splines",
+        "Unity.Mathematics",
+        "Unity.RenderPipelines.Core.Runtime",
+        "Unity.RenderPipelines.Universal.Runtime",
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.cinemachine",
+            "expression": "3.0.0",
+            "define": "SOL3_CINEMACHINE"
+        },
+        {
+            "name": "com.unity.splines",
+            "expression": "2.0.0",
+            "define": "SOL3_SPLINES"
+        }
+    ],
+    "noEngineReferences": false
+}

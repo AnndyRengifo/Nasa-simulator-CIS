@@ -1,0 +1,18 @@
+{
+  "note": "SIMULACIÓN: valores simplificados creados para la jugabilidad. No son datos oficiales de NASA.",
+  "solSeconds": 210,
+  "dayFraction": 0.58,
+  "sols": 3,
+  "start": { "energy": 78, "oxygen": 85, "water": 80, "food": 72, "health": 100, "radiation": 4, "spareParts": 4 },
+  "rates": {
+    "solarMax": 2.6, "baseLoad": 0.2, "lifeSupportLoad": 0.3, "recyclerLoad": 0.16, "greenhouseLoad": 0.2,
+    "labLoad": 0.55, "commsLoad": 0.25, "shelterLoad": 0.12,
+    "oxygenProduction": 0.62, "oxygenUse": 0.34, "waterRecycle": 0.31, "waterUse": 0.15, "greenhouseWater": 0.09, "foodUse": 0.105,
+    "cropSeconds": 65, "cropYield": 18, "plantWaterCost": 4, "witherSeconds": 25,
+    "healthLoss": 0.75, "healthRegen": 0.12, "radiationStorm": 1.4, "radiationSheltered": 0.1, "radiationDecay": 0.04, "radiationHarm": 55,
+    "wear": 0.0012, "overloadWear": 0.006,
+    "experimentSeconds": 26, "transmissionSeconds": 38, "failedRepairEnergyCost": 3
+  },
+  "goals": { "research": 3 },
+  "events": { "checkInterval": 4, "minGapSeconds": 32, "maxEventsPerSol": [2, 4, 5], "tutorialFaultAt": 35, "stormWarningSeconds": 22, "stormDurationSeconds": 45 }
+}

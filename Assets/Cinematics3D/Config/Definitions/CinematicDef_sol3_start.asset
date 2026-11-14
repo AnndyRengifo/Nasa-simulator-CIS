@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8564e38c20835749a5e8368afe006c1, type: 3}
+  m_Name: CinematicDef_sol3_start
+  m_EditorClassIdentifier: SOL3.Cinematics::Sol3.Cinematics.CinematicDefinition
+  id: sol3_start
+  displayName: Inicio del tercer sol
+  notes: "Disparo: comienzo del tercer sol. Amanecer, recorrido por la base, preparaci\xF3n, objetivos finales."
+  scene:
+    guid: 5a6ff15dbaee8c04ab00e536a8fe4b16
+    path: Assets/Cinematics3D/Scenes/CIN_sol3_start.unity
+  timelineOverride: {fileID: 0}
+  expectedDuration: 46
+  subtitleSheets:
+  - {fileID: 11400000, guid: ab69702d984ff9a46a6fc13fbf28055a, type: 2}
+  skippable: 1
+  skipAvailableAfter: 1
+  fadeInDuration: 0.75
+  fadeOutDuration: 0.75
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  endBehaviour: 0
+  returnScene:
+    guid: 
+    path: 
+  playOncePerSave: 1
+  castOverrides: []

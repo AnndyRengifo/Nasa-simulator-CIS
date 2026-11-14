@@ -1,0 +1,173 @@
+{
+  "events": [
+    {
+      "id": "tutorial_power_fault",
+      "kind": "breakdown",
+      "system": "Batteries",
+      "title": "Fallo en el regulador de baterías",
+      "description": "El regulador de baterías de la sala de máquinas ha fallado. Las baterías pierden energía hasta que se repare el circuito.",
+      "warning": "AURA detecta chispas en el regulador de baterías de la sala de máquinas.",
+      "warningSeconds": 6,
+      "severity": 1,
+      "forceSol": 1,
+      "forceAt": 35,
+      "science": "En una base espacial la electricidad se almacena en baterías. Si un regulador falla, la energía se desperdicia en forma de calor y las reservas duran menos. Simulación: valores simplificados."
+    },
+    {
+      "id": "generator_fault",
+      "kind": "breakdown",
+      "system": "Batteries",
+      "title": "Sobrecarga en las baterías",
+      "description": "Las baterías se han sobrecalentado por el alto consumo. Repara el circuito en la sala de máquinas.",
+      "warning": "Temperatura alta en el banco de baterías. Reduce el consumo o prepárate para una reparación.",
+      "warningSeconds": 12,
+      "severity": 2,
+      "minSol": 1,
+      "cooldown": 120,
+      "baseWeight": 0.5,
+      "boosters": [
+        { "stat": "energyUsedToday", "op": ">", "value": 110, "weight": 3 },
+        { "stat": "energy", "op": "<", "value": 25, "weight": 2 }
+      ],
+      "science": "Usar mucha electricidad a la vez calienta los equipos. Repartir el consumo ayuda a que duren más. Simulación: valores simplificados."
+    },
+    {
+      "id": "solar_dust",
+      "kind": "breakdown",
+      "system": "Solar",
+      "title": "Paneles solares cubiertos de polvo",
+      "description": "Una capa de polvo marciano cubre los paneles y su controlador ha fallado. Repara el circuito del controlador solar en la sala de máquinas.",
+      "warning": "La producción solar está cayendo. Algo bloquea los paneles.",
+      "warningSeconds": 10,
+      "severity": 2,
+      "minSol": 1,
+      "phase": "day",
+      "cooldown": 150,
+      "baseWeight": 0.7,
+      "science": "En Marte el polvo se deposita sobre los paneles solares y reduce la luz que reciben. Los rovers Spirit y Opportunity dependían de ráfagas de viento para limpiarlos."
+    },
+    {
+      "id": "oxygen_drop",
+      "kind": "breakdown",
+      "system": "LifeSupport",
+      "title": "Presión de oxígeno inestable",
+      "description": "Las válvulas del generador de oxígeno están descalibradas. Calíbralas en Soporte vital.",
+      "warning": "La presión de oxígeno empieza a oscilar en Soporte vital.",
+      "warningSeconds": 10,
+      "severity": 3,
+      "minSol": 1,
+      "cooldown": 110,
+      "baseWeight": 0.6,
+      "boosters": [
+        { "stat": "energy", "op": "<", "value": 20, "weight": 2 }
+      ],
+      "science": "Los astronautas necesitan oxígeno continuamente. En la Estación Espacial Internacional se produce oxígeno separando el agua en hidrógeno y oxígeno con electricidad (electrólisis)."
+    },
+    {
+      "id": "water_leak",
+      "kind": "breakdown",
+      "system": "Recycler",
+      "title": "Fuga en el reciclador de agua",
+      "description": "Las tuberías del reciclador están desconectadas. Reconecta el circuito de agua en Soporte vital.",
+      "warning": "La presión del circuito de agua está bajando.",
+      "warningSeconds": 10,
+      "severity": 2,
+      "minSol": 1,
+      "cooldown": 110,
+      "baseWeight": 0.6,
+      "science": "En el espacio el agua es tan valiosa que se recicla casi toda, incluso la humedad del aire. Así no hay que traerla constantemente desde la Tierra."
+    },
+    {
+      "id": "greenhouse_lights",
+      "kind": "breakdown",
+      "system": "Greenhouse",
+      "title": "Luces del invernadero apagadas",
+      "description": "El circuito de iluminación del invernadero se ha cortado. Sin luz, las plantas no crecen.",
+      "warning": "Parpadeo en las luces de cultivo del invernadero.",
+      "warningSeconds": 8,
+      "severity": 1,
+      "minSol": 1,
+      "cooldown": 120,
+      "baseWeight": 0.6,
+      "science": "Las plantas necesitan luz para hacer la fotosíntesis. En una base cerrada se usan luces especiales que consumen electricidad."
+    },
+    {
+      "id": "comms_fault",
+      "kind": "breakdown",
+      "system": "Comms",
+      "title": "Antena desalineada",
+      "description": "La antena de comunicaciones ha perdido la señal con la Tierra. Realinéala en el centro de control.",
+      "warning": "La señal de la Tierra se debilita.",
+      "warningSeconds": 8,
+      "severity": 1,
+      "minSol": 2,
+      "cooldown": 140,
+      "baseWeight": 0.5,
+      "boosters": [
+        { "stat": "research", "op": ">=", "value": 2, "weight": 1 }
+      ],
+      "science": "Las señales de radio viajan a la velocidad de la luz, pero Marte está tan lejos que un mensaje tarda entre unos 3 y 22 minutos en llegar a la Tierra, según la posición de los planetas."
+    },
+    {
+      "id": "lab_fault",
+      "kind": "breakdown",
+      "system": "Lab",
+      "title": "Cortocircuito en el laboratorio",
+      "description": "El equipo de análisis del laboratorio tiene un cortocircuito. Repara el circuito para seguir investigando.",
+      "warning": "Lecturas extrañas en el analizador del laboratorio.",
+      "warningSeconds": 8,
+      "severity": 1,
+      "minSol": 2,
+      "cooldown": 140,
+      "baseWeight": 0.4,
+      "boosters": [
+        { "stat": "experimentRunning", "op": ">", "value": 0, "weight": 1.5 }
+      ],
+      "science": "Los instrumentos científicos son delicados. Por eso las misiones llevan repuestos y los astronautas aprenden a repararlos."
+    },
+    {
+      "id": "energy_shortage",
+      "kind": "decision",
+      "title": "Escasez de energía",
+      "description": "La batería está muy baja y es de noche. Hay que decidir qué sistema apagar para que el oxígeno siga funcionando.",
+      "minSol": 1,
+      "phase": "night",
+      "cooldown": 200,
+      "baseWeight": 6,
+      "conditions": [
+        { "stat": "energy", "op": "<", "value": 18 }
+      ],
+      "options": [
+        { "id": "cut_greenhouse", "label": "Apagar las luces del invernadero", "powerOff": "Greenhouse", "explanation": "Las plantas dejarán de crecer, pero el oxígeno sigue funcionando." },
+        { "id": "cut_recycler", "label": "Apagar el reciclador de agua", "powerOff": "Recycler", "explanation": "El agua bajará más rápido. Recuerda volver a encenderlo de día." },
+        { "id": "cut_lab", "label": "Apagar el laboratorio", "powerOff": "Lab", "explanation": "La investigación se detiene, pero se ahorra mucha energía." }
+      ],
+      "science": "Durante la noche no hay energía solar: la base solo cuenta con lo que guardó en las baterías durante el día."
+    },
+    {
+      "id": "solar_activity",
+      "kind": "storm",
+      "title": "Actividad solar",
+      "description": "Llegan partículas energéticas del Sol. La tripulación debe protegerse en el refugio hasta que pase.",
+      "warning": "Se ha registrado actividad solar. Revisa los protocolos de seguridad de la colonia.",
+      "severity": 3,
+      "forceSol": 2,
+      "forceAt": 70,
+      "science": "Las erupciones solares y las eyecciones de masa coronal pueden lanzar partículas energéticas. Marte casi no tiene campo magnético global y su atmósfera es fina, así que los astronautas necesitan refugios con blindaje."
+    },
+    {
+      "id": "solar_activity_late",
+      "kind": "storm",
+      "title": "Nueva actividad solar",
+      "description": "Otra ráfaga de partículas solares se acerca. Protege a la tripulación en el refugio.",
+      "warning": "Nuevo aviso de actividad solar. Prepara el refugio.",
+      "severity": 3,
+      "minSol": 3,
+      "phase": "day",
+      "once": true,
+      "cooldown": 400,
+      "baseWeight": 0.8,
+      "science": "La actividad del Sol varía en ciclos de unos 11 años. En los máximos solares hay más erupciones."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+# Unity
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/.utmp/
+*.csproj
+*.sln
+*.slnx
+*.pidb
+*.suo
+*.user
+*.userprefs
+*.apk
+*.aab
+
+# Secretos: la clave real de la NASA solo vive en este archivo local
+.env.local
+.env
